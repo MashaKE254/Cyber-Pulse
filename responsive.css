@@ -1,0 +1,81 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .start-btn {
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .cta-btn {
+        align-self: center;
+    }
+
+    .trusted-brands {
+        margin-top: 2rem;
+    }
+
+    .brand-container {
+        justify-content: center;
+    }
+
+    .hologram {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hologram-face:nth-child(1) { transform: rotateY(0deg) translateZ(100px); }
+    .hologram-face:nth-child(2) { transform: rotateY(72deg) translateZ(100px); }
+    .hologram-face:nth-child(3) { transform: rotateY(144deg) translateZ(100px); }
+    .hologram-face:nth-child(4) { transform: rotateY(216deg) translateZ(100px); }
+    .hologram-face:nth-child(5) { transform: rotateY(288deg) translateZ(100px); }
+}
+
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
